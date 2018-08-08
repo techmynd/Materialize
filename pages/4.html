@@ -20,11 +20,42 @@
 <body>
 <br><br>
 		
+<div class="container">
 
+  <h6>Validate email field</h6>
+  <br><br>
+
+  <div class="input-field">
+    <input id="emailfield" type="email" class="validate">
+    <label data-error="Invalid Email Address" data-success="Success" for="emailfield">Email Address</label>
+  </div>
+
+  <div class="input-field">
+    <select>
+      <option value="" disabled selected>Select Option</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+  </div>
+
+
+</div>
 
 
 <br><br>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    
+    // initialize select
+
+    $('select').formSelect();
+
+  });
+  </script>
+
 </body>
 </html>
+
